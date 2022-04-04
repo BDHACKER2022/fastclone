@@ -8,10 +8,10 @@
 
 try:
 	import os,sys,time,platform,datetime,random,hashlib,re,threading,json,getpass,urllib,cookielib,requests,uuid,string,subprocess
-	from multiprocessing.pool https://www.facebook.com/zihad.hossain36 ThreadPool
+	from multiprocessing.pool import ThreadPool
 	from requests.exceptions import ConnectionError
 except ImportError:
-	os.system("pip2 install requests lolcat")
+	os.system("pip2 install r
 	os.system("python2 fastclone.py")
 
 from os import system
@@ -40,11 +40,58 @@ except requests.exceptions.ConnectionError:
 ip = requests.get('https://api.ipify.org').text.strip()
 loc = requests.get('https://ipapi.com/ip_api.php?ip=' + ip, headers={'Referer': 'https://ip-api.com/', 'Content-Type': 'application/json; charset=utf-8', 'User-Agent': 'Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36'}).json()['country_name'].upper()
 	
-def linex():
-	os.system('echo  "\n ======================================\n" | lolcat -a -d 2 -s 50')
-def logo():
-	os.system('echo "\n  
-             \n  \n    ╔═════════════════════════════╗\n    ║ TOOL NAME: { fastcloning }        ║\n    ║ AUTHOR   : BDHACKER2022        ║\n    ║ GITHUB   : github.com/BDHACKER2022     ║\n    ╚═════════════════════════════╝" | lolcat -a -d 2 -s 50')	
+
+import os,sys,time,datetime,random,hashlib,re,threading,json,urllib,cookielib,requests,mechanize
+from multiprocessing.pool import ThreadPool
+from requests.exceptions import ConnectionError
+from mechanize import Browser
+reload(sys)
+sys.setdefaultencoding('utf8')
+ 
+
+br = mechanize.Browser()
+br.set_handle_robots(False)
+br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(),max_time=1)
+br.addheaders = [('User-Agent', 'Mozilla/5.0 (Linux; Android 8.1.0; Chrome/79.0.3945.116) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.116 Mobile Safari/537.36')]
+br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16')]
+
+
+def keluar():
+	print "\033[1;96m[!] \x1b[1;91mExit"
+	os.sys.exit()
+def acak(b):
+    w = 'ahtdzjc'
+    d = ''
+    for i in x:
+        d += '!'+w[random.randint(0,len(w)-1)]+i
+    return cetak(d)
+def cetak(b):
+    w = 'ahtdzjc'
+    for i in w:
+        j = w.index(i)
+        x= x.replace('!%s'%i,'\033[%s;1m'%str(31+j))
+    x += '\033[0m'
+    x = x.replace('!0','\033[0m')
+    sys.stdout.write(x+'\n')
+def jalan(z):
+	for e in z + '\n':
+		sys.stdout.write(e)
+		sys.stdout.flush()
+		time.sleep(00000.1)
+##### LOGO #####
+logo = """
+   BDHACKER2022
+   ▄︻̷̿┻̿═━一
+   ZIHAD HOSSAIN RAFI 
+   THE LEGEND RAFI
+   BANGLADESG HACKERS
+   ▄︻̷̿┻̿═━一
+\033[1;91m=======================================
+\033[1;96mAuthor  \033[1;93m: \033[1;92mlBDHACKER2022
+\033[1;96mYouTube \033[1;93m: \033[1;92mBangladeshi Hackers
+\033[1;96mGitHub  \033[1;93m: \033[1;92mhttps://github.com/BDHACKER2022
+\033[1;96mBlogger \033[1;93m: \033[1;92mhttps://www.facebook.com/zihad.hossain36
+\033[1;91m======================================="""
 
 def main():
 	os.system("clear")
