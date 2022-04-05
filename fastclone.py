@@ -11,7 +11,7 @@ try:
 	from multiprocessing.pool import ThreadPool
 	from requests.exceptions import ConnectionError
 except ImportError:
-	os.system("pip2 install r
+	os.system("pip2 install requests lolcat")
 	os.system("python2 fastclone.py")
 
 from os import system
